@@ -1,10 +1,12 @@
-# Title (replace with your title)
+# Regex note for me
 
-Introductory paragraph (replace this with your text)
+This is a note-to-self about Regex. The objective for this project is to create a tutorial that explains how a specific regular expression, or regex, functions by breaking down each part of the expression and describing what it does.
 
 ## Summary
 
 Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+
+
 
 ## Table of Contents
 
@@ -45,5 +47,4 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ### Look-ahead and Look-behind
 
 ## Author
-
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This tutorial is created by [JeanSuw](https://github.com/JeanSuw)
