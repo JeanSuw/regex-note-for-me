@@ -3,11 +3,14 @@
 This is a note-to-self about Regex. The objective for this project is to create a tutorial that explains how a specific regular expression, or regex, functions by breaking down each part of the expression and describing what it does.
 
 ## Summary
+Regex (or regexp) is regular expression. It's a sequence of characters that define a search pattern.
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This regex tutorial is about matching a Hex value.
+<br>`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`<br>
+As you can see here, this expression is written using a combination of special characters and literal characters. The special ones is used to find patterns in strings while the literal ones are used to find the exact matches for the specific words or phases. 
 
-This regex tutorial is about matching a Hex value. 
-* `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
+I recommended looked through the table of contents to start off with how the characters are used.
+
 
 ## Table of Contents
 
@@ -26,7 +29,13 @@ This regex tutorial is about matching a Hex value.
 ## Regex Components
 
 ### Anchors
+They are type of assertion that allows you to do many things.
+It helps you specify which characters you want to match.
+<br>`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`</br>
 
+* `^` is a **Caret**. It matches the position before the characters. In otherword it matches the beginning of the text
+* `$` is a **Dollar sign**. It matches the position after the characters (which means matching at the end of the text)
+* `/` is a **Front tick**
 ### Quantifiers
 
 ### OR Operator
