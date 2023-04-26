@@ -6,7 +6,8 @@ This is a note-to-self about Regex. The objective for this project is to create 
 
 Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
-
+This regex tutorial is about matching a Hex value. 
+* `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
 
 ## Table of Contents
 
