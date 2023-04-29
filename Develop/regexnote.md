@@ -35,8 +35,10 @@ It helps you specify which characters you want to match.
 
 * `^` is a **Caret**. It matches the position before the characters. In otherword it matches the beginning of the text
 * `$` is a **Dollar sign**. It matches the position after the characters (which means matching at the end of the text)
-* `/` is a **Front tick**
+* `/` is a **Front tick**. The one at the beginning is the open Front tick while the back is the close Front tick
 ### Quantifiers
+
+* `?` Matches zero or one time.
 
 ### OR Operator
 
