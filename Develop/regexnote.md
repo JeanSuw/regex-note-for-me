@@ -41,10 +41,13 @@ They are used to quantify how many times a part of your regular expression shoul
 To use a quantifer you must add its symbols after a character (the characters can be a character class or a sub-expression). Every quantifiers have range, each symbols below will explains what they do.
 
 * `?` Matches zero or one time.
-* `x{6}`: In this expression, its means regex will match exactly 4 'x' characters. 
+* `x{6}`: In this expression, its means regex will match exactly 6 'x' characters. 
     * if we applied [a-f0-9] to 'x', like [a-f0-9]{6}, it means that regex will match 4 of [a-f0-9]
     * we can also rewrite it as [a-f0-9]{6,6} In other word repeat from 6 to 6 times. Repeat from N to N time
 ### OR Operator
+"Or" or "|" is used to separate the terms inside the parenthesis (...)
+<br>`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`</br>
+In  this scenario, inside the parenthesis, we have regex matches 6  time of a-f0-9 or matches 3 times of a-f0-9.
 
 ### Character Classes
 
@@ -67,7 +70,7 @@ This tutorial is created by [JeanSuw](https://github.com/JeanSuw)
 
 ## Links to form this tutorial
 * [Quantifiers](https://blog.robertelder.org/regular-expression-quantifiers/#:~:text=%7BN%2C%7D%3F&text=%7BN%2CM%7D%3F&text=Quantifiers%20are%20used%20to%20quantify,times%20it%20should%20be%20repeated.)
-* []()
+* [Or](https://www.ocpsoft.org/tutorials/regular-expressions/or-in-regex/)
 * []()
 * []()
 * []()
