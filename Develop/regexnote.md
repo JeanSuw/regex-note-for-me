@@ -77,6 +77,10 @@ This expression only have one question mark.
 <br>`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`</br>
 
 ### Boundaries
+<br>`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`</br>
+This expression has boundery.
+* `^` indicates the beginning
+* `$` indicates the end
 
 ### Back-references
 
@@ -93,7 +97,7 @@ This tutorial is created by [JeanSuw](https://github.com/JeanSuw)
 * [Capture Group Numbering & Naming: The Gory Details](https://www.rexegg.com/regex-capture.html)
 * [Bracket expressions](https://www.ibm.com/docs/it/netcoolomnibus/7.4?topic=library-bracket-expressions)
 * [Greedy and lazy quantifiers](https://javascript.info/regexp-greedy-and-lazy#lazy-mode)
-* []()
+* [Setting the right (regex) boundaries is important](https://www.sonarsource.com/blog/setting-the-right-regex-boundaries-is-important/#:~:text=Boundary%20markers%20such%20as%20%5E%20and,special%20characters%20with%20a%20backslash.)
 * []()
 * []()
 * []()
