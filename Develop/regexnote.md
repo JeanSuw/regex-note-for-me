@@ -69,8 +69,12 @@ In this case, the "[a-f0-9]{6}|[a-f0-9]{3}" is the substring.
 ### Bracket Expressions
 It is used to match a single character or collating element.
 
+In this case it matches any character in the range of characters separated by a hyphen (-) as shown in section [Character Classes](#character-classes)
 
 ### Greedy and Lazy Match
+There is no greedy search and lazy match in this expression. Even though there is a ?, but if added after another quantifier (or even itself) it gets another meaning – it switches the matching mode from greedy to lazy.
+This expression only have one question mark.
+<br>`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`</br>
 
 ### Boundaries
 
@@ -87,6 +91,10 @@ This tutorial is created by [JeanSuw](https://github.com/JeanSuw)
 * [Character classes](https://www.regular-expressions.info/charclass.html)
 * [Capturing Groups](https://docs.oracle.com/javase/tutorial/essential/regex/groups.html)
 * [Capture Group Numbering & Naming: The Gory Details](https://www.rexegg.com/regex-capture.html)
+* [Bracket expressions](https://www.ibm.com/docs/it/netcoolomnibus/7.4?topic=library-bracket-expressions)
+* [Greedy and lazy quantifiers](https://javascript.info/regexp-greedy-and-lazy#lazy-mode)
+* []()
+* []()
 * []()
 * []()
 * []()
