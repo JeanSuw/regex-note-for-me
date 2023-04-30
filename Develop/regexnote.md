@@ -42,20 +42,33 @@ To use a quantifer you must add its symbols after a character (the characters ca
 
 * `?` Matches zero or one time.
 * `x{6}`: In this expression, its means regex will match exactly 6 'x' characters. 
-    * if we applied [a-f0-9] to 'x', like [a-f0-9]{6}, it means that regex will match 4 of [a-f0-9]
-    * we can also rewrite it as [a-f0-9]{6,6} In other word repeat from 6 to 6 times. Repeat from N to N time
+    * If we applied [a-f0-9] to 'x', like [a-f0-9]{6}, it means that regex will match 4 of [a-f0-9]
+    * We can also rewrite it as [a-f0-9]{6,6} In other word repeat from 6 to 6 times. Repeat from N to N time
+    * We also have another [a-f0-9] on the other side of |. However it ask to matches 3 times.
 ### OR Operator
 "Or" or "|" is used to separate the terms inside the parenthesis (...)
 <br>`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`</br>
 In  this scenario, inside the parenthesis, we have regex matches 6  time of a-f0-9 or matches 3 times of a-f0-9.
 
 ### Character Classes
+It is also called character sets.
+* If you put random letters inside the bracket, it will match with any words that has one of letters inside the bracket
+    * gr[ae]y will match either gray or grey
+* But if you put a hyphen (this symbol: -) inside a character class then you are able to specify the range
+    * In this case, [a-f0-9], you can add more range. 
+    * There are two ranges in this square brackets
+        * a-f means matches the character from a to f. The char code is 97 to 109.
+        * 0-9 means matches the characters in range 0 to 9. The char code is 48 to 57.
+<br>`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`</br>
 
 ### Flags
-
+No flags in this line: `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
 ### Grouping and Capturing
-
+Capturing is a way to treat multiple characters as a single unit.
+In this case, the "[a-f0-9]{6}|[a-f0-9]{3}" is the substring.
 ### Bracket Expressions
+It is used to match a single character or collating element.
+
 
 ### Greedy and Lazy Match
 
@@ -71,9 +84,9 @@ This tutorial is created by [JeanSuw](https://github.com/JeanSuw)
 ## Links to form this tutorial
 * [Quantifiers](https://blog.robertelder.org/regular-expression-quantifiers/#:~:text=%7BN%2C%7D%3F&text=%7BN%2CM%7D%3F&text=Quantifiers%20are%20used%20to%20quantify,times%20it%20should%20be%20repeated.)
 * [Or](https://www.ocpsoft.org/tutorials/regular-expressions/or-in-regex/)
-* []()
-* []()
-* []()
+* [Character classes](https://www.regular-expressions.info/charclass.html)
+* [Capturing Groups](https://docs.oracle.com/javase/tutorial/essential/regex/groups.html)
+* [Capture Group Numbering & Naming: The Gory Details](https://www.rexegg.com/regex-capture.html)
 * []()
 * []()
 * []()
