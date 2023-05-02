@@ -23,8 +23,6 @@ I recommended looked through the table of contents to start off with how the cha
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
@@ -42,20 +40,20 @@ To use a quantifer you must add its symbols after a character (the characters ca
 
 * `?` Matches zero or one time.
 * `x{6}`: In this expression, its means regex will match exactly 6 'x' characters. 
-    * If we applied [a-f0-9] to 'x', like [a-f0-9]{6}, it means that regex will match 4 of [a-f0-9]
-    * We can also rewrite it as [a-f0-9]{6,6} In other word repeat from 6 to 6 times. Repeat from N to N time
-    * We also have another [a-f0-9] on the other side of |. However it ask to matches 3 times.
+    * If we applied `[a-f0-9]` to 'x', like `[a-f0-9]{6}`, it means that regex will match 6 of `[a-f0-9]`
+    * We can also rewrite it as `[a-f0-9]{6,6}` In other word repeat from 6 to 6 times. Repeat from N to N time
+    * We also have another `[a-f0-9]` on the other side of `|`. However it ask to matches 3 times.
 ### OR Operator
-"Or" or "|" is used to separate the terms inside the parenthesis (...)
+"Or" or `|` is used to separate the terms inside the parenthesis (...)
 <br>`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`</br>
-In  this scenario, inside the parenthesis, we have regex matches 6  time of a-f0-9 or matches 3 times of a-f0-9.
+In  this scenario, inside the parenthesis, we have regex matches 6  time of `a-f0-9` or matches 3 times of `a-f0-9`.
 
 ### Character Classes
 It is also called character sets.
 * If you put random letters inside the bracket, it will match with any words that has one of letters inside the bracket
     * gr[ae]y will match either gray or grey
 * But if you put a hyphen (this symbol: -) inside a character class then you are able to specify the range
-    * In this case, [a-f0-9], you can add more range. 
+    * In this case, `[a-f0-9]`, you can add more range. 
     * There are two ranges in this square brackets
         * a-f means matches the character from a to f. The char code is 97 to 109.
         * 0-9 means matches the characters in range 0 to 9. The char code is 48 to 57.
@@ -77,12 +75,12 @@ This expression only have one question mark.
 <br>`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`</br>
 
 ### Boundaries
+This expression has boundary.
 <br>`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`</br>
-This expression has boundery.
-* `^` indicates the beginning
-* `$` indicates the end
 
-### Back-references
+* `^` indicates the beginning
+* `$` indicates the end of the string
+
 
 ### Look-ahead and Look-behind
 
@@ -98,7 +96,3 @@ This tutorial is created by [JeanSuw](https://github.com/JeanSuw)
 * [Bracket expressions](https://www.ibm.com/docs/it/netcoolomnibus/7.4?topic=library-bracket-expressions)
 * [Greedy and lazy quantifiers](https://javascript.info/regexp-greedy-and-lazy#lazy-mode)
 * [Setting the right (regex) boundaries is important](https://www.sonarsource.com/blog/setting-the-right-regex-boundaries-is-important/#:~:text=Boundary%20markers%20such%20as%20%5E%20and,special%20characters%20with%20a%20backslash.)
-* []()
-* []()
-* []()
-* []()
